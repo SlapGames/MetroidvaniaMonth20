@@ -1,5 +1,18 @@
-﻿public class PowerAttackWindupState: IPlayerActiveState
+﻿using UnityEngine;
+
+public class PowerAttackWindupState: IPlayerActiveState
 {
+    private Player player;
+    private PlayerInputManager playerInputManager;
+    private Animator animator;
+
+    public PowerAttackWindupState(Player player, PlayerInputManager playerInputManager, Animator animator)
+    {
+        this.player = player;
+        this.playerInputManager = playerInputManager;
+        this.animator = animator;
+    }
+
     public void EnterState()
     {
         throw new System.NotImplementedException();

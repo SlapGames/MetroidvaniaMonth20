@@ -54,6 +54,10 @@ public class NoActionState : IPlayerActiveState
         {
             player.ChangeActiveState(nameof(GrappleStartupState));
         }
+        else if(playerInputManager.ReadCurrentInput()?.InputType == InputType.Attack)
+        {
+            player.ChangeActiveState(nameof(AttackWindupState));
+        }
     }
 
     public void ExitState()

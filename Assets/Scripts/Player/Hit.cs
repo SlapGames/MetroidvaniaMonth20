@@ -2,17 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hit : MonoBehaviour
+public class Hit
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int AttackDamage { get; set; }
+    public Vector2 AttackOrigin { get; set; }
+    public Vector2 HitOrigin { get; set; }
+    public int Direction { get; set; }
 }

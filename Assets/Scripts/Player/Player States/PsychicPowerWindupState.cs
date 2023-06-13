@@ -1,5 +1,18 @@
-﻿public class PsychicPowerWindupState: IPlayerActiveState
+﻿using UnityEngine;
+
+public class PsychicPowerWindupState: IPlayerActiveState
 {
+    private Player player;
+    private PlayerInputManager playerInputManager;
+    private Animator animator;
+
+    public PsychicPowerWindupState(Player player, PlayerInputManager playerInputManager, Animator animator)
+    {
+        this.player = player;
+        this.playerInputManager = playerInputManager;
+        this.animator = animator;
+    }
+
     public void EnterState()
     {
         throw new System.NotImplementedException();

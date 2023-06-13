@@ -1,5 +1,18 @@
-﻿public class HitStunState: IPlayerActiveState
+﻿using UnityEngine;
+
+public class HitStunState: IPlayerActiveState
 {
+    private Player player;
+    private PlayerInputManager playerInputManager;
+    private Animator animator;
+
+    public HitStunState(Player player, PlayerInputManager playerInputManager, Animator animator)
+    {
+        this.player = player;
+        this.playerInputManager = playerInputManager;
+        this.animator = animator;
+    }
+
     public void EnterState()
     {
         throw new System.NotImplementedException();

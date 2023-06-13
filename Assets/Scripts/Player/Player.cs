@@ -14,9 +14,12 @@ public class Player : MonoBehaviour
     public PassiveStates PassiveState { get; private set; } = PassiveStates.Grounded;
     public IPlayerActiveState ActiveState { get; private set; }
     public GrappleManager GManager { get; private set; }
+    public CombatManager CManager { get; private set; }
     public bool Falling { get; private set; }
     public bool DoubleJumpAvailable { get; private set; }
     public bool DodgeAvailable { get; private set; }
+    public bool BlockAvailable { get; private set; }
+    public bool PowerAvailable { get; private set; }
     public Vector2 JumpForce
     {
         get { return jumpForce; }

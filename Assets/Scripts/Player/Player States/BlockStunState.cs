@@ -1,5 +1,18 @@
-﻿public class BlockStunState: IPlayerActiveState
+﻿using UnityEngine;
+
+public class BlockStunState: IPlayerActiveState
 {
+    private Player player;
+    private PlayerInputManager playerInputManager;
+    private Animator animator;
+
+    public BlockStunState(Player player, PlayerInputManager playerInputManager, Animator animator)
+    {
+        this.player = player;
+        this.playerInputManager = playerInputManager;
+        this.animator = animator;
+    }
+
     public void EnterState()
     {
         throw new System.NotImplementedException();

@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int Damage { get; private set; }
+    public string AnimationName { get; set; }
+    public Attack NextInCombo { get; set; }
+
+    private Rigidbody2D body;
+
+    private void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void TriggerAttack()
     {
-        
+
     }
 }
