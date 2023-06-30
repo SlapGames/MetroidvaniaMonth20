@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     public bool DodgeAvailable { get; private set; }
     public bool BlockAvailable { get; private set; }
     public bool PowerAvailable { get; private set; }
+    public bool GrappleAvailable { get; private set; }
     public Vector2 JumpForce
     {
         get { return jumpForce; }
@@ -43,6 +44,8 @@ public class Player : MonoBehaviour
     public float DeltaTimeCopy { get; private set; }
     public float HoverGravity { get => hoverGravity; private set => hoverGravity = value; }
     public float HoverTime { get => hoverTime; private set => hoverTime = value; }
+    public float SpriteDirection { get; private set; } = 1;
+
     public Rigidbody2D rb2d;
 
     public int groundCheckShouldCheckHowManyColliders = 16;
@@ -69,6 +72,9 @@ public class Player : MonoBehaviour
     [SerializeField] private float hoverTime = .5f;
     [SerializeField] private bool useTargetYVelocity = false;
 
+    [SerializeField] private int energy = 2;
+    [SerializeField] private Color[] energyColors = { Color.red, Color.yellow, Color.green };
+
     private Transform player;
     private Vector2 previousPosition;
     private int maxDoubleJumps = 1;
@@ -76,6 +82,8 @@ public class Player : MonoBehaviour
     private ContactFilter2D groundFilter;
     private PlayerActiveStateFactory activeStateFactory;
     private float dodgeTimer;
+
+    private Material playerMaterial;
 
     [Space(15)]
     [Header("Debug")]
@@ -85,6 +93,7 @@ public class Player : MonoBehaviour
     public float DEBUG_VelocityX;
     public float DEBUG_VelocityY;
     public Vector2 DEBUG_ActualVelocity;
+    public bool DEBUG_UseEnergy;
 
     private void Start()
     {
@@ -100,6 +109,10 @@ public class Player : MonoBehaviour
         groundFilter.useTriggers = true;
 
         GManager = GetComponent<GrappleManager>();
+        CManager = GetComponent<CombatManager>();
+
+        playerMaterial = GetComponent<SpriteRenderer>().material;
+        playerMaterial.SetColor("_Color", energyColors[energy]);
 
 
         rb2d = GetComponent<Rigidbody2D>();
@@ -112,20 +125,35 @@ public class Player : MonoBehaviour
     {
         DeltaTimeCopy = Time.deltaTime;
 
+        if(energy < 0)
+        {
+            energy = 0;
+            Debug.LogWarning("Energy is less than 0. Setting to 0.");
+        }
+
         //Falling
         //Falling = player.position.y < previousPosition.y && Mathf.Abs(player.position.y - previousPosition.y) >= minDistanceForFall;
         Falling = rb2d.velocity.y < 0;
         DEBUG_falling = Falling;
 
-        //DoubleJumpAvailable
         if (PassiveState == PassiveStates.Grounded)
         {
             doubleJumpsUsed = 0;
+            ResetEnergyLevel();
         }
         DoubleJumpAvailable = doubleJumpsUsed < maxDoubleJumps;
 
-        //DodgeAvailable
         DodgeAvailable = dodgeTimer < Time.time;
+
+        //ToDo: Limit uses of block. Make it refresh on hit and on succesfully dodging an attack.
+        BlockAvailable = true;
+
+        //ToDo: Limit uses of powers. Put it on a cooldown, and don't refresh in the air.
+        PowerAvailable = energy > 0;
+
+        GrappleAvailable = energy > 0;
+        
+        playerMaterial.SetColor("_Color", energyColors[energy]);
 
         ActiveState.Run();
         ActiveState.EvaluateTransitions();
@@ -136,6 +164,11 @@ public class Player : MonoBehaviour
 
         DEBUG_passiveStateName = PassiveState.ToString();
         DEBUG_activeStateName = ActiveState.ToString();
+        if (DEBUG_UseEnergy)
+        {
+            energy--;
+            DEBUG_UseEnergy = false;
+        }
     }
 
     private void FixedUpdate()
@@ -168,7 +201,7 @@ public class Player : MonoBehaviour
             throw new System.Exception("The state factory returned null for state: " + newState);
         }
 
-        Debug.Log(ActiveState.ToString());
+        //Debug.Log(ActiveState.ToString());
         ActiveState.EnterState();
     }
 
@@ -192,6 +225,7 @@ public class Player : MonoBehaviour
     {
         //player.localScale = new Vector2(Mathf.Sign(direction) * Mathf.Abs(player.localScale.x), player.localScale.y);
         GetComponent<SpriteRenderer>().flipX = direction < 0;
+        SpriteDirection = direction;
     }
 
     public void HaltJump()
@@ -210,10 +244,22 @@ public class Player : MonoBehaviour
         dodgeTimer = Time.time + dodgeCooldown;
     }
 
+    /// <remarks>
+    /// UnHaltYMovement should be called after this at some point, or the player won't be able to move vertically at all.
+    /// </remarks>
     public void HaltYMovement()
     {
         rb2d.velocity = new Vector2(rb2d.velocity.x, 0);
         rb2d.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+    }
+
+    /// <remarks>
+    /// UnHaltYMovement should be called after this at some point, or the player won't be able to move vertically at all.
+    /// </remarks>
+    public void HaltPreviousMovement()
+    {
+        VelocityX = 0;
+        HaltYMovement();
     }
 
     public void UnHaltYMovement()
@@ -259,5 +305,19 @@ public class Player : MonoBehaviour
 
         //Velocity needs to be reset here because the y component specifically can cause unintended movement at the end of the dash.
         rb2d.velocity = new Vector2(0, 0);
+    }
+
+    public void ResetEnergyLevel()
+    {
+        energy = energyColors.Length - 1;
+    }
+
+    public void UseEnergy()
+    {
+        energy--;
+        if(energy < 0)
+        {
+            energy = 0;
+        }   
     }
 }

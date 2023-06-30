@@ -31,7 +31,11 @@ public class DoubleJumpState : IPlayerActiveState
 
     public void EvaluateTransitions()
     {
-        if (waitBeforeCheckingGroundedStatus < Time.time && player.PassiveState == Player.PassiveStates.Grounded)
+        if (player.CManager.LastHit != null)
+        {
+            player.ChangeActiveState(nameof(HitStunState));
+        }
+        else if (waitBeforeCheckingGroundedStatus < Time.time && player.PassiveState == Player.PassiveStates.Grounded)
         {
             player.ChangeActiveState(nameof(NoActionState));
         }

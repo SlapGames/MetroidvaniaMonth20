@@ -26,7 +26,11 @@ public class PivotState : IPlayerActiveState
 
     public void EvaluateTransitions()
     {
-        if(animator.GetCurrentAnimatorStateInfo(0).normalizedTime > .9)
+        if (player.CManager.LastHit != null)
+        {
+            player.ChangeActiveState(nameof(HitStunState));
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime > .9)
         {
             player.ChangeActiveState(nameof(NoActionState));
         }

@@ -34,7 +34,11 @@ public class GrappleDashState : IPlayerActiveState
 
     public void EvaluateTransitions()
     {
-        if (timer < Time.time)
+        if (player.CManager.LastHit != null)
+        {
+            player.ChangeActiveState(nameof(HitStunState));
+        }
+        else if (timer < Time.time)
         {
             player.ChangeActiveState(nameof(NoActionState));
         }

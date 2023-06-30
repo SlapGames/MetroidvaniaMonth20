@@ -25,7 +25,11 @@ public class SkidState : IPlayerActiveState
 
     public void EvaluateTransitions()
     {
-        if(animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1 && playerInputManager.Move == 0)
+        if(player.CManager.LastHit != null)
+        {
+            player.ChangeActiveState(nameof(HitStunState));
+        }
+        else if(animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1 && playerInputManager.Move == 0)
         {
             player.ChangeActiveState(nameof(NoActionState));
         }

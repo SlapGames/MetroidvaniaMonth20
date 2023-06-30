@@ -6,30 +6,49 @@ public class PowerAttackWindupState: IPlayerActiveState
     private PlayerInputManager playerInputManager;
     private Animator animator;
 
+    private CombatManager combatManager;
+
     public PowerAttackWindupState(Player player, PlayerInputManager playerInputManager, Animator animator)
     {
         this.player = player;
         this.playerInputManager = playerInputManager;
         this.animator = animator;
+
+        combatManager = player.CManager;
     }
 
     public void EnterState()
     {
-        throw new System.NotImplementedException();
+        player.HaltPreviousMovement();
+
+        combatManager.AttackKey = "Power";
+        Attack currentAttack = combatManager.GetCurrentAttack();
+        animator.Play($"Base Layer.{currentAttack.Name} Wind Up");
     }
 
     public void EvaluateTransitions()
     {
-        throw new System.NotImplementedException();
+        if (player.CManager.LastHit != null)
+        {
+            player.ChangeActiveState(nameof(HitStunState));
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
+        {
+            player.ChangeActiveState(nameof(PowerAttackState));
+        }
     }
 
     public void ExitState()
     {
-        throw new System.NotImplementedException();
+        player.UnHaltYMovement();
+
+        if (playerInputManager.Move != 0)
+        {
+            player.SetSpriteDirection(Mathf.Sign(playerInputManager.Move));
+        }
     }
 
     public void Run()
     {
-        throw new System.NotImplementedException();
     }
 }

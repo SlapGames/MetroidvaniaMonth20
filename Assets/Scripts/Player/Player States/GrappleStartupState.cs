@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor.Networking.PlayerConnection;
+using UnityEngine;
 
 public class GrappleStartupState : IPlayerActiveState
 {
@@ -19,8 +20,9 @@ public class GrappleStartupState : IPlayerActiveState
 
     public void EnterState()
     {
-        player.VelocityX = 0;
-        player.HaltYMovement();
+        player.HaltPreviousMovement();
+
+        player.UseEnergy();
 
         grappleManager.StartGrapple();
 
@@ -29,7 +31,12 @@ public class GrappleStartupState : IPlayerActiveState
 
     public void EvaluateTransitions()
     {
-        if(!grappleManager.HookMoving && !grappleManager.LatchedOn)
+        if (player.CManager.LastHit != null)
+        {
+            grappleManager.ResetGrappling();
+            player.ChangeActiveState(nameof(HitStunState));
+        }
+        else if (!grappleManager.HookMoving && !grappleManager.LatchedOn)
         {
             grappleManager.ResetGrappling();
             player.ChangeActiveState(nameof(NoActionState));

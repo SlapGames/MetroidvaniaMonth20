@@ -19,6 +19,7 @@ public class PlayerInputManager : MonoBehaviour
     private List<InputObject> inputObjects = new List<InputObject>(INPUT_QUEUE_SIZE);
     private bool rightMoveHeld = false;
     private bool leftMoveHeld = false;
+    private bool psychicMode = false;
 
     [Space(15)]
     [Header("Debug")]
@@ -196,11 +197,41 @@ public class PlayerInputManager : MonoBehaviour
         }
     }
 
+    public void HandleBlockInput(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            InputObject newIO = new InputObject(InputType.Block);
+            RegisterInput(newIO);
+        }
+    }
+
     public void HandleDodgeInput(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
             InputObject newIO = new InputObject(InputType.Dodge);
+            RegisterInput(newIO);
+        }
+    }
+
+    public void HandlePsychicMode(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            psychicMode = true;
+        }
+        else if(context.canceled)
+        {
+            psychicMode = false;
+        }
+    }
+
+    public void HandlePsychicPower(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            InputObject newIO = new InputObject(InputType.Power);
             RegisterInput(newIO);
         }
     }

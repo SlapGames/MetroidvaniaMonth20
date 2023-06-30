@@ -27,7 +27,11 @@ public class NoActionState : IPlayerActiveState
 
     public void EvaluateTransitions()
     {
-        if (playerInputManager.Move != 0)
+        if (player.CManager.LastHit != null)
+        {
+            player.ChangeActiveState(nameof(HitStunState));
+        }
+        else if (playerInputManager.Move != 0)
         {
             player.ChangeActiveState(nameof(RunState));
         }
@@ -50,13 +54,21 @@ public class NoActionState : IPlayerActiveState
         {
             player.ChangeActiveState(nameof(AirDodgeState));
         }
-        else if(playerInputManager.ReadCurrentInput()?.InputType == InputType.Grapple)
+        else if(player.GrappleAvailable && playerInputManager.ReadCurrentInput()?.InputType == InputType.Grapple)
         {
             player.ChangeActiveState(nameof(GrappleStartupState));
         }
-        else if(playerInputManager.ReadCurrentInput()?.InputType == InputType.Attack)
+        else if (player.PassiveState == Player.PassiveStates.Grounded && playerInputManager.ReadCurrentInput()?.InputType == InputType.Attack)
         {
             player.ChangeActiveState(nameof(AttackWindupState));
+        }
+        else if(player.PowerAvailable && playerInputManager.ReadCurrentInput()?.InputType == InputType.Power)
+        {
+            player.ChangeActiveState(nameof(PsychicPowerWindupState));
+        }
+        else if(player.BlockAvailable && playerInputManager.ReadCurrentInput()?.InputType == InputType.Block)
+        {
+            player.ChangeActiveState(nameof(BlockState));
         }
     }
 

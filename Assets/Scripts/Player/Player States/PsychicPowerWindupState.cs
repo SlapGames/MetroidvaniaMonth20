@@ -6,30 +6,40 @@ public class PsychicPowerWindupState: IPlayerActiveState
     private PlayerInputManager playerInputManager;
     private Animator animator;
 
+    private CombatManager combatManager;
+
     public PsychicPowerWindupState(Player player, PlayerInputManager playerInputManager, Animator animator)
     {
         this.player = player;
         this.playerInputManager = playerInputManager;
         this.animator = animator;
+
+        combatManager = player.CManager;
     }
 
     public void EnterState()
     {
-        throw new System.NotImplementedException();
+        //No windups yet, so we'll just transition out immediately
+        EvaluateTransitions();
     }
 
     public void EvaluateTransitions()
     {
-        throw new System.NotImplementedException();
+        if (player.CManager.LastHit != null)
+        {
+            player.ChangeActiveState(nameof(HitStunState));
+        }
+        else
+        {
+            player.ChangeActiveState(nameof(PsychicPowerState));
+        }
     }
 
     public void ExitState()
     {
-        throw new System.NotImplementedException();
     }
 
     public void Run()
     {
-        throw new System.NotImplementedException();
     }
 }

@@ -32,6 +32,8 @@ public class SpotDodgeState : IPlayerActiveState
     public void ExitState()
     {
         player.TriggerDodgeCooldown();
+
+        player.CManager.DisregardLastHit();
     }
 
     public void Run()

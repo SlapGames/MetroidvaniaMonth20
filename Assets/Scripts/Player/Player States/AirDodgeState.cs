@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Unity.VisualScripting;
+using UnityEngine;
 
 public class AirDodgeState : IPlayerActiveState
 {
@@ -44,6 +45,8 @@ public class AirDodgeState : IPlayerActiveState
         player.VelocityX = 0;
 
         player.TriggerDodgeCooldown();
+
+        player.CManager.DisregardLastHit();
     }
 
     public static string GetName()

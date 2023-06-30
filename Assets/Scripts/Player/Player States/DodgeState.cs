@@ -32,6 +32,7 @@ public class DodgeState : IPlayerActiveState
     public void ExitState()
     {
         player.TriggerDodgeCooldown();
+        player.CManager.DisregardLastHit();
     }
 
     public static string GetName()

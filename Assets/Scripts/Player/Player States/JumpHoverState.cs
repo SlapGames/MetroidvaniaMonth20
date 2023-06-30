@@ -26,7 +26,11 @@ class JumpHoverState : IPlayerActiveState
 
     public void EvaluateTransitions()
     {
-        if(hoverTimer < Time.time /*|| !playerInputManager.JumpHeld*/)
+        if (player.CManager.LastHit != null)
+        {
+            player.ChangeActiveState(nameof(HitStunState));
+        }
+        else if (hoverTimer < Time.time /*|| !playerInputManager.JumpHeld*/)
         {
             player.ChangeActiveState(nameof(NoActionState));
         }
@@ -38,7 +42,7 @@ class JumpHoverState : IPlayerActiveState
         {
             player.ChangeActiveState(nameof(AirDodgeState));
         }
-        else if (playerInputManager.ReadCurrentInput()?.InputType == InputType.Grapple)
+        else if (player.GrappleAvailable && playerInputManager.ReadCurrentInput()?.InputType == InputType.Grapple)
         {
             player.ChangeActiveState(nameof(GrappleStartupState));
         }

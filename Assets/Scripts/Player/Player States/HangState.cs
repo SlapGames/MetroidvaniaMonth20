@@ -21,7 +21,11 @@ public class HangState : IPlayerActiveState
 
     public void EvaluateTransitions()
     {
-        if(!playerInputManager.GrappleHeld)
+        if (player.CManager.LastHit != null)
+        {
+            player.ChangeActiveState(nameof(HitStunState));
+        }
+        else if (!playerInputManager.GrappleHeld)
         {
             player.ChangeActiveState(nameof(NoActionState));
         }
