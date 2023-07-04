@@ -20,6 +20,9 @@ public class AirDodgeState : IPlayerActiveState
     {
         animator.Play("Base Layer.Air Dodge");
 
+        player.StartAirDodgeAfterImage();
+        player.UseEnergy();
+
         float direction = Mathf.Sign(playerInputManager.Move);
         if (playerInputManager.Move == 0)
         {
@@ -41,6 +44,8 @@ public class AirDodgeState : IPlayerActiveState
 
     public void ExitState()
     {
+        player.StopAirDodgeAfterImage();
+
         player.UnHaltYMovement();
         player.VelocityX = 0;
 

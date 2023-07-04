@@ -19,7 +19,11 @@ public class DoubleJumpState : IPlayerActiveState
 
     public void EnterState()
     {
-        animator.Play("Base Layer.Jump");
+        animator.Play("Base Layer.Double Jump");
+
+        player.UseEnergy();
+        player.StartDoubleJumpAfterImage();
+        player.DoDoubleJumpEffect();
 
         initialSpeed = player.VelocityX * Mathf.Sign(initialSpeed);
 
@@ -53,6 +57,7 @@ public class DoubleJumpState : IPlayerActiveState
 
     public void ExitState()
     {
+        player.StopDoubleJumpAfterImage();
     }
 
     public static string GetName()

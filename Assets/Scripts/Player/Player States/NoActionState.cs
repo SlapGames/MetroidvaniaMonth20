@@ -9,6 +9,8 @@ public class NoActionState : IPlayerActiveState
     private VelocityCalculator groundedCalc;
     private VelocityCalculator airCalc;
 
+    private bool hasSetAnimation = false;
+
     public NoActionState(Player player, PlayerInputManager playerInputManager, Animator animator)
     {
         this.player = player;
@@ -22,7 +24,6 @@ public class NoActionState : IPlayerActiveState
 
     public void EnterState()
     {
-        animator.Play("Base Layer.Idle");
     }
 
     public void EvaluateTransitions()
@@ -50,7 +51,7 @@ public class NoActionState : IPlayerActiveState
         {
             player.ChangeActiveState(nameof(SpotDodgeState));
         }
-        else if (player.PassiveState == Player.PassiveStates.Airborne && player.DodgeAvailable && playerInputManager.ReadCurrentInput()?.InputType == InputType.Dodge)
+        else if (player.PassiveState == Player.PassiveStates.Airborne && player.AirDodgeAvailable && playerInputManager.ReadCurrentInput()?.InputType == InputType.Dodge)
         {
             player.ChangeActiveState(nameof(AirDodgeState));
         }
@@ -85,6 +86,11 @@ public class NoActionState : IPlayerActiveState
     {
         if (player.PassiveState == Player.PassiveStates.Grounded)
         {
+            if(!hasSetAnimation)
+            {
+                animator.Play("Base Layer.Idle");
+                hasSetAnimation = true;
+            }
             player.VelocityX = groundedCalc.CalculateNextVelocity(player.VelocityX, player.DeltaTimeCopy);
         }
         else if (player.PassiveState == Player.PassiveStates.Airborne)

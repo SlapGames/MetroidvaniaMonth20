@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
     public bool BlockAvailable { get; private set; }
     public bool PowerAvailable { get; private set; }
     public bool GrappleAvailable { get; private set; }
+    public bool AirDodgeAvailable { get; private set; }
     public Vector2 JumpForce
     {
         get { return jumpForce; }
@@ -75,6 +76,13 @@ public class Player : MonoBehaviour
     [SerializeField] private int energy = 2;
     [SerializeField] private Color[] energyColors = { Color.red, Color.yellow, Color.green };
 
+    [SerializeField] private ParticleSystem doubleJumpAfterImageSystem;
+    [SerializeField] private ParticleSystem airDodgeAfterImageSystem;
+    [SerializeField] private ParticleSystem grappleAfterImageSystem;
+
+    [SerializeField] private GameObject doubleJumpLaunchPad;
+    [SerializeField] private Vector2 launchPadOffset;
+
     private Transform player;
     private Vector2 previousPosition;
     private int maxDoubleJumps = 1;
@@ -125,7 +133,7 @@ public class Player : MonoBehaviour
     {
         DeltaTimeCopy = Time.deltaTime;
 
-        if(energy < 0)
+        if (energy < 0)
         {
             energy = 0;
             Debug.LogWarning("Energy is less than 0. Setting to 0.");
@@ -141,7 +149,7 @@ public class Player : MonoBehaviour
             doubleJumpsUsed = 0;
             ResetEnergyLevel();
         }
-        DoubleJumpAvailable = doubleJumpsUsed < maxDoubleJumps;
+        DoubleJumpAvailable = doubleJumpsUsed < maxDoubleJumps && energy > 0;
 
         DodgeAvailable = dodgeTimer < Time.time;
 
@@ -152,7 +160,9 @@ public class Player : MonoBehaviour
         PowerAvailable = energy > 0;
 
         GrappleAvailable = energy > 0;
-        
+
+        AirDodgeAvailable = energy > 0 && DodgeAvailable;
+
         playerMaterial.SetColor("_Color", energyColors[energy]);
 
         ActiveState.Run();
@@ -160,6 +170,12 @@ public class Player : MonoBehaviour
 
         previousPosition = player.position;
 
+
+        if (airDodgeAfterImageSystem.isPlaying)
+        {
+            //TODO: Find out why this makes the particle sizes wonky
+            //airDodgeAfterImageSystem.textureSheetAnimation.SetSprite(0, GetComponent<SpriteRenderer>().sprite);
+        }
 
 
         DEBUG_passiveStateName = PassiveState.ToString();
@@ -315,9 +331,54 @@ public class Player : MonoBehaviour
     public void UseEnergy()
     {
         energy--;
-        if(energy < 0)
+        if (energy < 0)
         {
             energy = 0;
-        }   
+        }
+    }
+
+    public void StartDoubleJumpAfterImage()
+    {
+        doubleJumpAfterImageSystem.textureSheetAnimation.SetSprite(0, GetComponent<SpriteRenderer>().sprite);
+        doubleJumpAfterImageSystem.GetComponent<ParticleSystemRenderer>().flip = new Vector3(GetComponent<SpriteRenderer>().flipX ? 1 : 0, 0, 0);
+        doubleJumpAfterImageSystem.Play();
+    }
+
+    public void StopDoubleJumpAfterImage()
+    {
+        doubleJumpAfterImageSystem.Stop();
+    }
+    public void StartAirDodgeAfterImage()
+    {
+        airDodgeAfterImageSystem.textureSheetAnimation.SetSprite(0, GetComponent<SpriteRenderer>().sprite);
+        airDodgeAfterImageSystem.GetComponent<ParticleSystemRenderer>().flip = new Vector3(GetComponent<SpriteRenderer>().flipX ? 1 : 0, 0, 0);
+        airDodgeAfterImageSystem.Play();
+    }
+
+    public void StopAirDodgeAfterImage()
+    {
+        airDodgeAfterImageSystem.Stop();
+    }
+    public void StartGrappleAfterImage()
+    {
+        //I'm not going to set the sprite here. Instead, thatll be done via the Inspector. I think the particle system is having trouble with the varrying sizes of the sprites, so
+        //I'm going to try to just use the same sprite every time for the grappling afterimages. I think thatll look better anyway since the only sprite that should be used
+        //for the after images is the grapple pose.
+        //grappleAfterImageSystem.textureSheetAnimation.SetSprite(0, GetComponent<SpriteRenderer>().sprite);
+        grappleAfterImageSystem.GetComponent<ParticleSystemRenderer>().flip = new Vector3(GetComponent<SpriteRenderer>().flipX ? 1 : 0, 0, 0);
+        grappleAfterImageSystem.Play();
+    }
+
+    public void StopGrappleAfterImage()
+    {
+        grappleAfterImageSystem.Stop();
+    }
+
+    public void DoDoubleJumpEffect()
+    {
+        if(doubleJumpLaunchPad != null)
+        {
+            Instantiate(doubleJumpLaunchPad, (Vector2)transform.position + launchPadOffset, Quaternion.identity);
+        }
     }
 }

@@ -17,8 +17,6 @@ class JumpHoverState : IPlayerActiveState
 
     public void EnterState()
     {
-        animator.Play("Base Layer.Jump");
-
         hoverTimer = Time.time + player.HoverTime;
         player.SetGravity(player.HoverGravity);
         player.HaltJump();
@@ -38,7 +36,7 @@ class JumpHoverState : IPlayerActiveState
         {
             player.ChangeActiveState(nameof(DoubleJumpState));
         }
-        else if (player.DodgeAvailable && playerInputManager.ReadCurrentInput()?.InputType == InputType.Dodge)
+        else if (player.AirDodgeAvailable && playerInputManager.ReadCurrentInput()?.InputType == InputType.Dodge)
         {
             player.ChangeActiveState(nameof(AirDodgeState));
         }

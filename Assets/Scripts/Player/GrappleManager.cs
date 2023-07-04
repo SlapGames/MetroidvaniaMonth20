@@ -24,7 +24,7 @@ public class GrappleManager : MonoBehaviour
     [Header("Debug")]
     public Vector2 DEBUG_direction;
 
-    public void StartGrapple()
+    public void SetUpGrapple()
     {
         grapplePointDetector.DetectPoints();
         grapplePointDetector.Pause();
@@ -36,7 +36,9 @@ public class GrappleManager : MonoBehaviour
         Direction = new Vector2(destination.transform.position.x - grappleHook.transform.position.x, destination.transform.position.y - grappleHook.transform.position.y);
         Direction = Direction.normalized;
         DEBUG_direction = Direction;
-
+    }
+    public void StartGrapple()
+    {
         HookMoving = true;
     }
 

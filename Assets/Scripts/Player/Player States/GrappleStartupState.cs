@@ -3,11 +3,14 @@ using UnityEngine;
 
 public class GrappleStartupState : IPlayerActiveState
 {
+    private const float GRAPPLE_WIND_UP_TIME = .5f;
+
     private Player player;
     private PlayerInputManager playerInputManager;
     private Animator animator;
 
     private GrappleManager grappleManager;
+    private bool grappleStarted;
 
     public GrappleStartupState(Player player, PlayerInputManager playerInputManager, Animator animator)
     {
@@ -20,11 +23,13 @@ public class GrappleStartupState : IPlayerActiveState
 
     public void EnterState()
     {
+        animator.Play("Base Layer.Grapple Wind Up Horizontal");
+
         player.HaltPreviousMovement();
 
         player.UseEnergy();
 
-        grappleManager.StartGrapple();
+        grappleManager.SetUpGrapple();
 
         player.SetSpriteDirection(Mathf.Sign(grappleManager.Direction.x));
     }
@@ -36,12 +41,12 @@ public class GrappleStartupState : IPlayerActiveState
             grappleManager.ResetGrappling();
             player.ChangeActiveState(nameof(HitStunState));
         }
-        else if (!grappleManager.HookMoving && !grappleManager.LatchedOn)
+        else if (grappleStarted && !grappleManager.HookMoving && !grappleManager.LatchedOn)
         {
             grappleManager.ResetGrappling();
             player.ChangeActiveState(nameof(NoActionState));
         }
-        else if (!grappleManager.HookMoving && grappleManager.LatchedOn)
+        else if (grappleStarted &&  !grappleManager.HookMoving && grappleManager.LatchedOn)
         {
             player.ChangeActiveState(nameof(GrappleMovementState));
         }
@@ -59,6 +64,11 @@ public class GrappleStartupState : IPlayerActiveState
 
     public void Run()
     {
+        if(!grappleStarted && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= GRAPPLE_WIND_UP_TIME)
+        {
+            grappleManager.StartGrapple();
+            grappleStarted = true;
+        }
     }
 }
 

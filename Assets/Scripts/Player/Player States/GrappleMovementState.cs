@@ -19,7 +19,11 @@ public class GrappleMovementState : IPlayerActiveState
 
     public void EnterState()
     {
+        animator.Play("Base Layer.Grapple Drag Horizontal");
+
         player.HaltYMovement();
+
+        player.StartGrappleAfterImage();
 
         grappleManager.StartPlayerMovement();
     }
@@ -42,6 +46,8 @@ public class GrappleMovementState : IPlayerActiveState
 
     public void ExitState()
     {
+        player.StopGrappleAfterImage();
+
         player.UnHaltYMovement();
         grappleManager.ResetGrappling();
     }
