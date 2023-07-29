@@ -142,13 +142,13 @@ ScriptedImporter:
   spriteSheetImportData:
   - name: Grapple Points_0
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 10
-      y: 57
+      x: 11
+      y: 138
       width: 8
       height: 8
     spriteID: 15e453d75b34ad34ebe5d5622a0ecd0f
@@ -162,13 +162,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_1
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 26
-      y: 57
+      x: 3
+      y: 130
       width: 8
       height: 8
     spriteID: 5efc0647b381cad48909cb85cbb049ed
@@ -182,13 +182,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_2
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 34
-      y: 57
+      x: 11
+      y: 130
       width: 8
       height: 8
     spriteID: 7c455f749371d774d970a58f1a3ff699
@@ -202,13 +202,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_3
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 42
-      y: 57
+      x: 19
+      y: 130
       width: 8
       height: 8
     spriteID: 51f7ccba3e559f042a07bc6541e5ae44
@@ -222,13 +222,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_4
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 50
-      y: 57
+      x: 11
+      y: 122
       width: 8
       height: 8
     spriteID: b47f14084a0828e40966608593cd0e24
@@ -242,13 +242,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_5
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2
-      y: 49
+      x: 3
+      y: 114
       width: 8
       height: 8
     spriteID: 88a854e266e1be14585d55a7de5614d8
@@ -262,13 +262,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_7
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 18
-      y: 49
+      x: 19
+      y: 114
       width: 8
       height: 8
     spriteID: 1d3aac731fa63774eaca91c7f77135b4
@@ -282,13 +282,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_8
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 26
-      y: 49
+      x: 27
+      y: 114
       width: 8
       height: 8
     spriteID: ca708b8dbd1709243820e9f0ec9d645a
@@ -302,13 +302,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_11
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 50
-      y: 49
+      x: 19
+      y: 106
       width: 8
       height: 8
     spriteID: 0bdb27b198bedb649bbc4aea90d76e6f
@@ -322,13 +322,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_12
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 10
-      y: 41
+      x: 27
+      y: 106
       width: 8
       height: 8
     spriteID: ee7fd0d52d7e3474a86510996dc4fe54
@@ -342,13 +342,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_13
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 26
-      y: 41
+      x: 3
+      y: 98
       width: 8
       height: 8
     spriteID: 586ed00e9a7649f4192e14222767439c
@@ -362,13 +362,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_16
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 50
-      y: 41
+      x: 27
+      y: 98
       width: 8
       height: 8
     spriteID: 355690c5be65b644cb9d332795a4b295
@@ -382,13 +382,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_17
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 10
-      y: 33
+      x: 3
+      y: 90
       width: 8
       height: 8
     spriteID: 0dcb90ffdab0c33419b5d6e196c31a0f
@@ -402,13 +402,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_18
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 26
-      y: 33
+      x: 11
+      y: 90
       width: 8
       height: 8
     spriteID: a5ba0eb6ba58bef4eac17544cfe72bd4
@@ -422,13 +422,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_19
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 34
-      y: 33
+      x: 19
+      y: 90
       width: 8
       height: 8
     spriteID: 2fb7aefcfb9fb6d4a96e9dce327c00de
@@ -442,13 +442,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_20
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 42
-      y: 33
+      x: 27
+      y: 90
       width: 8
       height: 8
     spriteID: 08f2d6be29f60274bb34b3aae08bd4d8
@@ -462,13 +462,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_21
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 50
-      y: 33
+      x: 11
+      y: 82
       width: 8
       height: 8
     spriteID: 8d846f018e7096644924e296dc3139c8
@@ -482,13 +482,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_22
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2
-      y: 25
+      x: 3
+      y: 74
       width: 8
       height: 8
     spriteID: cb5bd1299609850408414c87416cdcae
@@ -502,13 +502,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_24
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 18
-      y: 25
+      x: 19
+      y: 74
       width: 8
       height: 8
     spriteID: 76261c70675227d4c8a064234653c174
@@ -522,13 +522,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_25
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 26
-      y: 25
+      x: 11
+      y: 66
       width: 8
       height: 8
     spriteID: 6978603c902569f459ee6a044fca7d81
@@ -542,13 +542,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_26
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 34
-      y: 25
+      x: 3
+      y: 58
       width: 8
       height: 8
     spriteID: 75baae88721efbb44b2f1c7dd9768c84
@@ -562,13 +562,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_27
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 42
-      y: 25
+      x: 11
+      y: 58
       width: 8
       height: 8
     spriteID: 6a3349f4f9339ab418c1ed9865cce48c
@@ -582,13 +582,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_28
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 50
-      y: 25
+      x: 19
+      y: 58
       width: 8
       height: 8
     spriteID: 61be47538be1dd34783d1d6167e5153d
@@ -602,13 +602,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_29
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 10
-      y: 17
+      x: 27
+      y: 58
       width: 8
       height: 8
     spriteID: 2e1909fd29d935e47ad8fddf4488fd80
@@ -622,13 +622,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_30
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 26
-      y: 17
+      x: 3
+      y: 50
       width: 8
       height: 8
     spriteID: 07dc9e2072224144285bd8e3a120e1b9
@@ -642,13 +642,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_33
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 50
-      y: 17
+      x: 27
+      y: 50
       width: 8
       height: 8
     spriteID: bd4efd96ccf0a3944aeeac75cb15a80a
@@ -662,13 +662,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_34
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 26
-      y: 9
+      x: 3
+      y: 42
       width: 8
       height: 8
     spriteID: 905f4963ba8292843a57084bb9ba92b0
@@ -682,13 +682,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_37
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 50
-      y: 9
+      x: 27
+      y: 42
       width: 8
       height: 8
     spriteID: f25cfd86d059b0943bd79f0982d8c536
@@ -702,13 +702,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_38
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 26
-      y: 1
+      x: 3
+      y: 34
       width: 8
       height: 8
     spriteID: 1e6eeae656fbca649b5e0053dc2ccad1
@@ -722,13 +722,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_39
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 34
-      y: 1
+      x: 11
+      y: 34
       width: 8
       height: 8
     spriteID: 229f12ccd7e28c542a11e7bc421a03bf
@@ -742,13 +742,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_40
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 42
-      y: 1
+      x: 19
+      y: 34
       width: 8
       height: 8
     spriteID: aafec28bda1d5764ab3a9f2884744be5
@@ -762,13 +762,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_41
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 50
-      y: 1
+      x: 27
+      y: 34
       width: 8
       height: 8
     spriteID: a8e4de364561e1949bd48447aad0dc54
@@ -782,13 +782,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_6
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 66
-      y: 57
+      x: 11
+      y: 114
       width: 8
       height: 8
     spriteID: d23f3713375edb048ba0fcd8f96b1e41
@@ -802,13 +802,13 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_9
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 66
-      y: 49
+      x: 3
+      y: 106
       width: 8
       height: 8
     spriteID: 9dfa551d60f9e8f45a14b90f823d8645
@@ -822,16 +822,296 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Grapple Points_10
     originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11
+      y: 106
+      width: 8
+      height: 8
+    spriteID: 433ff65c8284b3c4997af3ac6f329766
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Grapple Points_14
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11
+      y: 98
+      width: 8
+      height: 8
+    spriteID: 22d4dbd448dad9942868cc969851e01b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Grapple Points_15
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 19
+      y: 98
+      width: 8
+      height: 8
+    spriteID: 0dda660f214d3304a8d5130ac9d5c5a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Grapple Points_23
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11
+      y: 74
+      width: 8
+      height: 8
+    spriteID: 90b92b4a76b439a488eee04cd69d0659
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Grapple Points_31
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11
+      y: 50
+      width: 8
+      height: 8
+    spriteID: 4b76d5bceffb218438bb6d40afb8d462
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Grapple Points_32
+    originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 66
-      y: 41
+      x: 19
+      y: 50
       width: 8
       height: 8
-    spriteID: 433ff65c8284b3c4997af3ac6f329766
+    spriteID: d96a7967a3c180547a6efe437769f839
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Grapple Points_35
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11
+      y: 42
+      width: 8
+      height: 8
+    spriteID: bc4d75668a9bee94e93542b459e9c71a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Grapple Points_36
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 19
+      y: 42
+      width: 8
+      height: 8
+    spriteID: 3d9fcbf5a8b6d5d4ba5876a7a4a02158
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Grapple Points_42
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3
+      y: 18
+      width: 8
+      height: 8
+    spriteID: c2885ddf43b58884a9d68f63fb66c162
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Grapple Points_43
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11
+      y: 18
+      width: 8
+      height: 8
+    spriteID: 304b6076f92635642bcb3310c19e69ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Grapple Points_44
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 19
+      y: 18
+      width: 8
+      height: 8
+    spriteID: 75b718cc9c5499447ab5eb528a59cb1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Grapple Points_45
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 18
+      width: 8
+      height: 8
+    spriteID: 39a8772cb1a369745bf4241e0a3ec6e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Grapple Points_46
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 18
+      width: 8
+      height: 8
+    spriteID: 6de35f693df967b4d8c511957101d9b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Grapple Points_47
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 59
+      y: 18
+      width: 8
+      height: 8
+    spriteID: 6b504411a03e85d47aae9b7702950d23
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Grapple Points_48
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3
+      y: 2
+      width: 8
+      height: 8
+    spriteID: cf8e84c8691ae394ba1340f540f399aa
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -851,10 +1131,10 @@ ScriptedImporter:
     - name: Grapple Points
       frameIndex: 0
       cellRect:
-        x: 10
-        y: 3
-        width: 69
-        height: 61
+        x: 1
+        y: 2
+        width: 63
+        height: 139
       spriteId: 4c69d0ec76bb2364a9d686923c149589
     linkedCells: []
     parentIndex: -1
@@ -916,4 +1196,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 128, y: 64}
+  canvasSize: {x: 72, y: 144}

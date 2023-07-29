@@ -53,6 +53,8 @@ public class Player : MonoBehaviour
     public float SpriteDirection { get; private set; } = 1;
     public JumpType CurrentJumpType { get; set; }
     public Vector2 LongJumpForce { get => longJumpForce; private set => longJumpForce = value; }
+    public Vector2 LastSafePosition { get => lastSafePosition; set => lastSafePosition = value; }
+    public float MaxVerticalSpeed { get => maxVerticalSpeed; private set => maxVerticalSpeed = value; }
 
     public Rigidbody2D rb2d;
 
@@ -79,6 +81,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float regularGravity = 2;
     [SerializeField] private float hoverGravity = 1;
     [SerializeField] private float hoverTime = .5f;
+    [SerializeField] private float maxVerticalSpeed = 10f;
     [SerializeField] private bool useTargetYVelocity = false;
 
     [SerializeField] private int energy = 2;
@@ -90,6 +93,11 @@ public class Player : MonoBehaviour
 
     [SerializeField] private GameObject doubleJumpLaunchPad;
     [SerializeField] private Vector2 launchPadOffset;
+    [SerializeField] private Vector2 lastSafePosition;
+    
+    [SerializeField] private Collider2D interactCollider;
+    [SerializeField] private LayerMask interactMask;
+    private ContactFilter2D interactFilter;
 
     private Transform player;
     private Vector2 previousPosition;
@@ -101,6 +109,8 @@ public class Player : MonoBehaviour
 
     private Material playerMaterial;
 
+    private PlayerInputManager inputManager;
+
     [Space(15)]
     [Header("Debug")]
     public string DEBUG_passiveStateName;
@@ -110,10 +120,12 @@ public class Player : MonoBehaviour
     public float DEBUG_VelocityY;
     public Vector2 DEBUG_ActualVelocity;
     public bool DEBUG_UseEnergy;
+    public bool DEBUG_SendToLastSafePosition;
 
     private void Start()
     {
-        activeStateFactory = new PlayerActiveStateFactory(this, GetComponent<PlayerInputManager>(), animator);
+        inputManager = GetComponent<PlayerInputManager>();
+        activeStateFactory = new PlayerActiveStateFactory(this, inputManager, animator);
 
         ChangeActiveState(nameof(NoActionState));
 
@@ -135,6 +147,11 @@ public class Player : MonoBehaviour
         DEBUG_ActualVelocity = rb2d.velocity;
         DEBUG_VelocityX = VelocityX;
         DEBUG_VelocityY = VelocityY;
+
+        interactFilter = new ContactFilter2D();
+        interactFilter.layerMask = interactMask;
+        interactFilter.useLayerMask = true;
+        interactFilter.useTriggers = true;
     }
 
     private void Update()
@@ -176,6 +193,11 @@ public class Player : MonoBehaviour
         ActiveState.Run();
         ActiveState.EvaluateTransitions();
 
+        if(Mathf.Sign(rb2d.velocity.y) * rb2d.velocity.y > maxVerticalSpeed)
+        {
+            rb2d.velocity = new Vector2(rb2d.velocity.x, Mathf.Sign(rb2d.velocity.y) * maxVerticalSpeed);
+        }
+
         previousPosition = player.position;
 
 
@@ -192,6 +214,11 @@ public class Player : MonoBehaviour
         {
             energy--;
             DEBUG_UseEnergy = false;
+        }
+        if (DEBUG_SendToLastSafePosition)
+        {
+            SendToLastSafePosition();
+            DEBUG_SendToLastSafePosition = false;
         }
     }
 
@@ -390,6 +417,31 @@ public class Player : MonoBehaviour
         if(doubleJumpLaunchPad != null)
         {
             Instantiate(doubleJumpLaunchPad, (Vector2)transform.position + launchPadOffset, Quaternion.identity);
+        }
+    }
+
+    public void SendToLastSafePosition()
+    {
+        transform.position = LastSafePosition;
+    }
+
+    public void TryToActivateSwitches()
+    {
+        Collider2D[] results = new Collider2D[16];
+        int howManyResults = interactCollider.OverlapCollider(interactFilter, results);
+        for(int i = 0; i < howManyResults; i++)
+        {
+            TransportPointSwitch transportPointSwitch = results[i].GetComponent<TransportPointSwitch>();
+            if (transportPointSwitch != null)
+            {
+                transportPointSwitch.Switch(true);
+            }
+
+            DoorSwitch doorSwitch = results[i].GetComponent<DoorSwitch>();
+            if (doorSwitch != null)
+            {
+                doorSwitch.Toggle();
+            }
         }
     }
 }

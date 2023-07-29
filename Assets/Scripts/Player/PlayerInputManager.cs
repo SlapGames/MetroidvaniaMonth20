@@ -235,4 +235,12 @@ public class PlayerInputManager : MonoBehaviour
             RegisterInput(newIO);
         }
     }
+    
+    public void HandleActivate(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            GetComponent<Player>().TryToActivateSwitches();
+        }
+    }
 }

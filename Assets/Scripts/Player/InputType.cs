@@ -1,4 +1,4 @@
-﻿public enum InputType 
+﻿public enum InputType
 {
     Jump = 0,
     Grapple = 1,
@@ -6,4 +6,5 @@
     Attack = 3,
     Power = 4,
     Block = 5,
+    Activate = 6,
 }
