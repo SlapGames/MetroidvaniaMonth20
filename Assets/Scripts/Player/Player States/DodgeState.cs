@@ -27,6 +27,11 @@ public class DodgeState : IPlayerActiveState
         {
             player.ChangeActiveState(nameof(NoActionState));
         }
+        else if (playerInputManager.ReadCurrentInput()?.InputType == InputType.Jump)
+        {
+            player.CurrentJumpType = Player.JumpType.Long;
+            player.ChangeActiveState(nameof(JumpState));
+        }
     }
 
     public void ExitState()

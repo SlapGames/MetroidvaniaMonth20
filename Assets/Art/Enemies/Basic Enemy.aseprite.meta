@@ -1,0 +1,2963 @@
+fileFormatVersion: 2
+guid: 67ea72f7f72f31e43ba199823338e6a5
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 12
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 0
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 0
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638252024859491687
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Basic Enemy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 72
+      width: 8
+      height: 10
+    spriteID: 5e1ac2615b70e8c4e82d8b3d92be5a50
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 72}
+  - name: Basic Enemy_Frame_1
+    originalName: 
+    pivot: {x: 0.5555556, y: 0.38461542}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 71
+      y: 51
+      width: 9
+      height: 13
+    spriteID: 161d802143eedce40be998092839a049
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 71, y: 51}
+  - name: Basic Enemy_Frame_2
+    originalName: 
+    pivot: {x: 0.5555556, y: 0.2352941}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 21
+      y: 72
+      width: 9
+      height: 17
+    spriteID: 0e93e84e22ec43a44b553de3ef39f276
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 21, y: 72}
+  - name: Basic Enemy_Frame_3
+    originalName: 
+    pivot: {x: 0.5555556, y: 0.22222221}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 72
+      width: 9
+      height: 18
+    spriteID: 165fba9bb85e9cd47862ddd735caee6c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 72}
+  - name: Basic Enemy_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.2631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 98
+      width: 8
+      height: 19
+    spriteID: 59bd9e2bc7e80e04bafcbcf7d309bf87
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 98}
+  - name: Basic Enemy_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 138
+      y: 72
+      width: 8
+      height: 10
+    spriteID: 0101d8d8245591e4b9f487c323cccd44
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 138, y: 72}
+  - name: Basic Enemy_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 72
+      width: 8
+      height: 11
+    spriteID: e85dd98f026c2b941b6602f53388ad2e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 72}
+  - name: Basic Enemy_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.4285714}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 72
+      width: 8
+      height: 14
+    spriteID: 1d22114f1ebd2814b9530658cdbfdd09
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 72}
+  - name: Basic Enemy_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 179
+      y: 125
+      width: 8
+      height: 8
+    spriteID: f419f4a88cb32b04cb2e54a57161267d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 179, y: 125}
+  - name: Basic Enemy_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.8571428}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 116
+      y: 125
+      width: 10
+      height: 7
+    spriteID: b959936d3e18166499c81ec304e981d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 116, y: 125}
+  - name: Basic Enemy_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 72
+      width: 8
+      height: 10
+    spriteID: 21a020cea4bc75b4db793f9592b3636d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 154, y: 72}
+  - name: Basic Enemy_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 72
+      width: 8
+      height: 10
+    spriteID: 54f1fb29b9729654e8a0e9ebb5617b39
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 72}
+  - name: Basic Enemy_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 159
+      width: 6
+      height: 10
+    spriteID: 02ecca70a2a86334893c6369594d6b20
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 159}
+  - name: Basic Enemy_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 18
+      y: 159
+      width: 6
+      height: 10
+    spriteID: ae974efb26740ff488dd0e158dd11e7f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 18, y: 159}
+  - name: Basic Enemy_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 159
+      width: 6
+      height: 10
+    spriteID: dbf4c0de141e1f3449e35f1bb210688a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 159}
+  - name: Basic Enemy_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 159
+      width: 6
+      height: 10
+    spriteID: da3b216716a7f914795c1497bcb370b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 159}
+  - name: Basic Enemy_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 72
+      width: 8
+      height: 10
+    spriteID: 24684ff532a60154b8a5cf5a41045954
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 72}
+  - name: Basic Enemy_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 202
+      y: 72
+      width: 8
+      height: 10
+    spriteID: 6b5d01fd29ff152439e1f16fb1f8e619
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 202, y: 72}
+  - name: Basic Enemy_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 218
+      y: 72
+      width: 8
+      height: 10
+    spriteID: 4a55fdea2b469684d8455e7ca08122de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 218, y: 72}
+  - name: Basic Enemy_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 234
+      y: 72
+      width: 8
+      height: 10
+    spriteID: 9793efa8345427a41ba5eb20ba0f073f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 234, y: 72}
+  - name: Basic Enemy_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 98
+      width: 8
+      height: 10
+    spriteID: 93f7dd2b916814d4b9f11418422c420b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 20, y: 98}
+  - name: Basic Enemy_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 98
+      width: 8
+      height: 10
+    spriteID: 26d2314cb8669be4a9b6e09574201e8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 98}
+  - name: Basic Enemy_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 98
+      width: 8
+      height: 10
+    spriteID: 348b3a4f6bf85de4887a93eca42dbb54
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 98}
+  - name: Basic Enemy_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 98
+      width: 8
+      height: 10
+    spriteID: e21972ac13391ec4c8c0035b04b8dd4d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 98}
+  - name: Basic Enemy_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 98
+      width: 8
+      height: 10
+    spriteID: 327fe66ffc1ff524886ad4f6e380f3ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 98}
+  - name: Basic Enemy_Frame_25
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 98
+      width: 8
+      height: 10
+    spriteID: dfa5e523d1852b643a0f1777ff464604
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 100, y: 98}
+  - name: Basic Enemy_Frame_26
+    originalName: 
+    pivot: {x: 0.42857146, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 134
+      y: 125
+      width: 7
+      height: 10
+    spriteID: 6192dabe8fddf144fa5f05d67c4a3344
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 134, y: 125}
+  - name: Basic Enemy_Frame_27
+    originalName: 
+    pivot: {x: 0.5, y: 0.39999998}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 159
+      width: 6
+      height: 10
+    spriteID: c9637280600fdb944895b7507da048f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 60, y: 159}
+  - name: Basic Enemy_Frame_28
+    originalName: 
+    pivot: {x: 0.5, y: 0.39999998}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 159
+      width: 6
+      height: 10
+    spriteID: 6608667cfb0fad64fb13b38cff5601df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 159}
+  - name: Basic Enemy_Frame_29
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 159
+      width: 6
+      height: 10
+    spriteID: a17dad038c7d32040bd24080ce0e66da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 159}
+  - name: Basic Enemy_Frame_30
+    originalName: 
+    pivot: {x: 0.42857146, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 149
+      y: 125
+      width: 7
+      height: 10
+    spriteID: 19733bf09e48496408dca9f2cffb61b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 149, y: 125}
+  - name: Basic Enemy_Frame_31
+    originalName: 
+    pivot: {x: 0.5, y: 0.39999998}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 116
+      y: 98
+      width: 8
+      height: 10
+    spriteID: 6853be59bbdf06c4db9f3b7b467ff9c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 116, y: 98}
+  - name: Basic Enemy_Frame_32
+    originalName: 
+    pivot: {x: 0.5, y: 0.39999998}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 132
+      y: 98
+      width: 8
+      height: 10
+    spriteID: 275915c4da152154e8532f11ef969f11
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 132, y: 98}
+  - name: Basic Enemy_Frame_33
+    originalName: 
+    pivot: {x: 0.6666667, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 33
+      width: 12
+      height: 10
+    spriteID: 5cded4f7bb21bfc4c80bcbe18c96e043
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 33}
+  - name: Basic Enemy_Frame_34
+    originalName: 
+    pivot: {x: 0.6666667, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 33
+      width: 12
+      height: 10
+    spriteID: f2da9b46b825fa546b2959465a168d4a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 192, y: 33}
+  - name: Basic Enemy_Frame_35
+    originalName: 
+    pivot: {x: 0.6666667, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 33
+      width: 12
+      height: 10
+    spriteID: bcb9f523c14afb141a6f353b4eb8fe20
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 33}
+  - name: Basic Enemy_Frame_36
+    originalName: 
+    pivot: {x: 0.44444445, y: 0.5555556}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 72
+      width: 9
+      height: 9
+    spriteID: 8b8a387bc8e0b5c43b7d0607e4ca9cb1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 72}
+  - name: Basic Enemy_Frame_37
+    originalName: 
+    pivot: {x: 0.61538464, y: 0.5555556}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 51
+      width: 13
+      height: 9
+    spriteID: f42bf50f2ea18cc49b30f98fd9872956
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 51}
+  - name: Basic Enemy_Frame_38
+    originalName: 
+    pivot: {x: 0.61538464, y: 0.5555556}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 51
+      width: 13
+      height: 9
+    spriteID: 74610037cb7d94a4fb0730cba8345a5e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 109, y: 51}
+  - name: Basic Enemy_Frame_39
+    originalName: 
+    pivot: {x: 0.61538464, y: 0.5555556}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 51
+      width: 13
+      height: 9
+    spriteID: 13a328dd846f1b74e8ad74d39e563b8f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 130, y: 51}
+  - name: Basic Enemy_Frame_40
+    originalName: 
+    pivot: {x: 0.625, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 98
+      width: 8
+      height: 10
+    spriteID: a5102d1d76454524db36ec90158be82c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 98}
+  - name: Basic Enemy_Frame_41
+    originalName: 
+    pivot: {x: 0.5, y: 0.625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 195
+      y: 125
+      width: 8
+      height: 8
+    spriteID: e74117ffcb29a14408dae86e54dc424a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 195, y: 125}
+  - name: Basic Enemy_Frame_42
+    originalName: 
+    pivot: {x: 0.5, y: 0.625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 211
+      y: 125
+      width: 8
+      height: 8
+    spriteID: 307d24150a5df984b8e43f361289c913
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 211, y: 125}
+  - name: Basic Enemy_Frame_43
+    originalName: 
+    pivot: {x: 0.5, y: 0.625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 125
+      width: 8
+      height: 8
+    spriteID: 169a0a8bddc237d4aa1b4946f4502db4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 125}
+  - name: Basic Enemy_Frame_44
+    originalName: 
+    pivot: {x: 0.5, y: 0.625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 243
+      y: 125
+      width: 8
+      height: 8
+    spriteID: d717d7826adfe274f99ee9544e78295c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 243, y: 125}
+  - name: Basic Enemy_Frame_45
+    originalName: 
+    pivot: {x: 0.5, y: 0.625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 143
+      width: 8
+      height: 8
+    spriteID: 89a634abc81765140989db8b9763cdee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 143}
+  - name: Basic Enemy_Frame_46
+    originalName: 
+    pivot: {x: 0.5, y: 0.625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 143
+      width: 8
+      height: 8
+    spriteID: abdbc126599fc3344b28259e40e5d7de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 20, y: 143}
+  - name: Basic Enemy_Frame_47
+    originalName: 
+    pivot: {x: 0.5, y: 0.625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 143
+      width: 8
+      height: 8
+    spriteID: 0f7113c2e6cc07945bc9bb5892d86702
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 143}
+  - name: Basic Enemy_Frame_48
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 98
+      width: 8
+      height: 10
+    spriteID: 7e9bc1382c383e64690b4af1fe3b11f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 164, y: 98}
+  - name: Basic Enemy_Frame_49
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 189
+      y: 51
+      width: 10
+      height: 10
+    spriteID: 105802a566e71be4b9fa3f5cf94f31c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 189, y: 51}
+  - name: Basic Enemy_Frame_50
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 207
+      y: 51
+      width: 10
+      height: 10
+    spriteID: 5b0e1d6b9d8cc1d4dbc9f67641062fe1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 207, y: 51}
+  - name: Basic Enemy_Frame_51
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 98
+      width: 8
+      height: 10
+    spriteID: 9dec4a77aeaa9674c981445f0959aafe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 98}
+  - name: Basic Enemy_Frame_52
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 196
+      y: 98
+      width: 8
+      height: 10
+    spriteID: c60fed75c2cc5ad40aa269d601608067
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 196, y: 98}
+  - name: Basic Enemy_Frame_53
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 51
+      width: 10
+      height: 10
+    spriteID: 6fc4e9e552eb8f14d8cb9ec0ac58ef87
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 225, y: 51}
+  - name: Basic Enemy_Frame_54
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 102
+      y: 159
+      width: 6
+      height: 10
+    spriteID: 29886701b1aec31438b972c63410864f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 102, y: 159}
+  - name: Basic Enemy_Frame_55
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 116
+      y: 159
+      width: 6
+      height: 10
+    spriteID: 5329a0acdafad144a8ef66da3847644e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 116, y: 159}
+  - name: Basic Enemy_Frame_56
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 98
+      width: 8
+      height: 10
+    spriteID: 71a23f7f297c8194f94580ef4aaf28a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 98}
+  - name: Basic Enemy_Frame_57
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 159
+      width: 6
+      height: 10
+    spriteID: 3f9a81b0b807ab34582a357aa8247387
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 130, y: 159}
+  - name: Basic Enemy_Frame_58
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 159
+      width: 6
+      height: 10
+    spriteID: 6ef4c10c4a08f814db502cfd7c708791
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 159}
+  - name: Basic Enemy_Frame_59
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 228
+      y: 98
+      width: 8
+      height: 10
+    spriteID: 27e62ca44305c9b4a9c1c985f67890a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 228, y: 98}
+  - name: Basic Enemy_Frame_60
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 244
+      y: 98
+      width: 8
+      height: 10
+    spriteID: eb53b186f0219f2408feb2469ff56f10
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 244, y: 98}
+  - name: Basic Enemy_Frame_61
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 125
+      width: 8
+      height: 10
+    spriteID: 6bd3876c85e2199498ea0fe950e7fdc4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 125}
+  - name: Basic Enemy_Frame_62
+    originalName: 
+    pivot: {x: 0.8000001, y: 0.5454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 51
+      width: 15
+      height: 11
+    spriteID: b4b6971c931d45b49ae2da82eb72fbbd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 51}
+  - name: Basic Enemy_Frame_63
+    originalName: 
+    pivot: {x: 0.8275862, y: 0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 4
+      width: 29
+      height: 15
+    spriteID: 073458e9f59affd43bce7ccf6df6ab84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 4}
+  - name: Basic Enemy_Frame_64
+    originalName: 
+    pivot: {x: 0.5666667, y: 0.4761905}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 30
+      height: 21
+    spriteID: 5a80cbe9417c669428835064b4b3abae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Basic Enemy_Frame_65
+    originalName: 
+    pivot: {x: 0.2631579, y: 0.4117647}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 4
+      width: 19
+      height: 17
+    spriteID: a7c7c495a869bbe47b009bbc2a03ffad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 119, y: 4}
+  - name: Basic Enemy_Frame_66
+    originalName: 
+    pivot: {x: 0.2777778, y: 0.38461542}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 51
+      width: 18
+      height: 13
+    spriteID: 8059255ebfc13f34c8d587d0000c1354
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 51}
+  - name: Basic Enemy_Frame_67
+    originalName: 
+    pivot: {x: 0.5555556, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 72
+      width: 9
+      height: 10
+    spriteID: bde4b1215816ec841aef7f843e021ca7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 72, y: 72}
+  - name: Basic Enemy_Frame_68
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 125
+      width: 8
+      height: 10
+    spriteID: 02cd298efe9b6194fa1f3e47db781448
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 20, y: 125}
+  - name: Basic Enemy_Frame_69
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 125
+      width: 8
+      height: 10
+    spriteID: 6068b667e42008543a27580a68bd06a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 125}
+  - name: Basic Enemy_Frame_70
+    originalName: 
+    pivot: {x: 0.625, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 125
+      width: 8
+      height: 10
+    spriteID: 88f8fb89cf149064bbed5761aac6af2a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 125}
+  - name: Basic Enemy_Frame_71
+    originalName: 
+    pivot: {x: 0.5, y: 0.49999997}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 143
+      width: 8
+      height: 8
+    spriteID: 765b2cb020e474a418d2734b1b968a43
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 143}
+  - name: Basic Enemy_Frame_72
+    originalName: 
+    pivot: {x: 0.5, y: 0.49999997}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 143
+      width: 8
+      height: 8
+    spriteID: b6f1c89802ca03d4582c7bffb84451a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 143}
+  - name: Basic Enemy_Frame_73
+    originalName: 
+    pivot: {x: 0.5, y: 0.49999997}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 143
+      width: 8
+      height: 8
+    spriteID: 45ebaf7e605e46c46914924aace79015
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 143}
+  - name: Basic Enemy_Frame_74
+    originalName: 
+    pivot: {x: 0.5, y: 0.49999997}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 143
+      width: 8
+      height: 8
+    spriteID: 4db8fe78cdc7fb64dab255e5ab88ead7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 100, y: 143}
+  - name: Basic Enemy_Frame_75
+    originalName: 
+    pivot: {x: 0.5, y: 0.49999997}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 116
+      y: 143
+      width: 8
+      height: 8
+    spriteID: 1c0f88fcc1e3e9d4b9c1421015ff26ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 116, y: 143}
+  - name: Basic Enemy_Frame_76
+    originalName: 
+    pivot: {x: 0.5, y: 0.49999997}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 132
+      y: 143
+      width: 8
+      height: 8
+    spriteID: 9d3ae32fbf9f24045a5fc96e3a238660
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 132, y: 143}
+  - name: Basic Enemy_Frame_77
+    originalName: 
+    pivot: {x: 0.5, y: 0.49999997}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 143
+      width: 8
+      height: 8
+    spriteID: 474f27dcac7085847bfd93daf619f0e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 143}
+  - name: Basic Enemy_Frame_78
+    originalName: 
+    pivot: {x: 0.71428573, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 33
+      width: 14
+      height: 10
+    spriteID: d742e5df6d502ff4096d47ba5c01d7f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 33}
+  - name: Basic Enemy_Frame_79
+    originalName: 
+    pivot: {x: 0.7647059, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 33
+      width: 17
+      height: 10
+    spriteID: 219c8845536ab744bb2f03b164670836
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 33}
+  - name: Basic Enemy_Frame_80
+    originalName: 
+    pivot: {x: 0.5, y: 0.5454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 4
+      width: 32
+      height: 11
+    spriteID: 4a3b185a6d1905048ab0c6b25b568c61
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 4}
+  - name: Basic Enemy_Frame_81
+    originalName: 
+    pivot: {x: 0.33333334, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 33
+      width: 24
+      height: 10
+    spriteID: 1f23215716cdfc94da278c8fd6215bfd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 33}
+  - name: Basic Enemy_Frame_82
+    originalName: 
+    pivot: {x: 0.22222222, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 33
+      width: 18
+      height: 10
+    spriteID: c8409d519bc972b41ab24e9f191bffd5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 33}
+  - name: Basic Enemy_Frame_83
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 125
+      width: 8
+      height: 10
+    spriteID: a336563a064714f4ea1fad25acb8d272
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 125}
+  - name: Basic Enemy_Frame_84
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 72
+      width: 10
+      height: 10
+    spriteID: 8b7d0eccceccdaa458185190c421beb8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 72}
+  - name: Basic Enemy_Frame_85
+    originalName: 
+    pivot: {x: 0.4166667, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 232
+      y: 33
+      width: 12
+      height: 10
+    spriteID: 90c00eec13d044c408d3784552342c65
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 232, y: 33}
+  - name: Basic Enemy_Frame_86
+    originalName: 
+    pivot: {x: 0.1851852, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 4
+      width: 27
+      height: 10
+    spriteID: 124400c9aa4faa8429cd738412f38ce9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 4}
+  - name: Basic Enemy_Frame_87
+    originalName: 
+    pivot: {x: 0.14285715, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 4
+      width: 28
+      height: 10
+    spriteID: fb6c53f9a95e4cd4192018ee5f6dba19
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 184, y: 4}
+  - name: Basic Enemy_Frame_88
+    originalName: 
+    pivot: {x: 0.13333334, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 146
+      y: 4
+      width: 30
+      height: 10
+    spriteID: 56498a4b26eca9745abc13c8dcfa254a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 146, y: 4}
+  - name: Basic Enemy_Frame_89
+    originalName: 
+    pivot: {x: 0.42857146, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 125
+      width: 7
+      height: 10
+    spriteID: 5bda57fbcd391cd4697a40759001ed96
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 164, y: 125}
+  - name: Basic Enemy_Frame_90
+    originalName: 
+    pivot: {x: 0.44444445, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 243
+      y: 51
+      width: 9
+      height: 11
+    spriteID: 0154f3e09d69cec4eaae702a95e6bf77
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 243, y: 51}
+  - name: Basic Enemy_Frame_91
+    originalName: 
+    pivot: {x: 0.4, y: 0.38461542}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 53
+      y: 51
+      width: 10
+      height: 13
+    spriteID: a7497e09f52db9d4b92c1c8997c4be72
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 53, y: 51}
+  - name: Basic Enemy_Frame_92
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 125
+      width: 8
+      height: 10
+    spriteID: 0bbed170c440c414b82b0288f5c9e6e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 125}
+  - name: Basic Enemy_Frame_93
+    originalName: 
+    pivot: {x: 0.27272728, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 151
+      y: 51
+      width: 11
+      height: 10
+    spriteID: f01b492ad55556d48867c1999d27b1fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 151, y: 51}
+  - name: Basic Enemy_Frame_94
+    originalName: 
+    pivot: {x: 0.27272728, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 51
+      width: 11
+      height: 10
+    spriteID: 913af06d2ddf3a04e8a7ba8805a58438
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 51}
+  - name: Basic Enemy_Frame_95
+    originalName: 
+    pivot: {x: 0.30769232, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 33
+      width: 13
+      height: 10
+    spriteID: 638c6780857d92349843778e8b64b34c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 109, y: 33}
+  - name: Basic Enemy_Frame_96
+    originalName: 
+    pivot: {x: 0.30769232, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 33
+      width: 13
+      height: 10
+    spriteID: 646f12d07a8165946ad2f2a4c43054c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 130, y: 33}
+  - name: Basic Enemy_Frame_97
+    originalName: 
+    pivot: {x: 0.30769232, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 151
+      y: 33
+      width: 13
+      height: 10
+    spriteID: b333fbc2ea1c8b04ab5aa191748dcbed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 151, y: 33}
+  - name: Basic Enemy_Frame_98
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 125
+      width: 8
+      height: 10
+    spriteID: 76f119e84b5dafe42871ba2f6d05c4f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 100, y: 125}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1290437276
+    name: Basic Enemy
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Basic Enemy_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 5e1ac2615b70e8c4e82d8b3d92be5a50
+    - name: Basic Enemy_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 27
+        y: 9
+        width: 9
+        height: 13
+      spriteId: 161d802143eedce40be998092839a049
+    - name: Basic Enemy_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 27
+        y: 10
+        width: 9
+        height: 17
+      spriteId: 0e93e84e22ec43a44b553de3ef39f276
+    - name: Basic Enemy_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 27
+        y: 10
+        width: 9
+        height: 18
+      spriteId: 165fba9bb85e9cd47862ddd735caee6c
+    - name: Basic Enemy_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 19
+      spriteId: 59bd9e2bc7e80e04bafcbcf7d309bf87
+    - name: Basic Enemy_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 0101d8d8245591e4b9f487c323cccd44
+    - name: Basic Enemy_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 11
+      spriteId: e85dd98f026c2b941b6602f53388ad2e
+    - name: Basic Enemy_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 28
+        y: 8
+        width: 8
+        height: 14
+      spriteId: 1d22114f1ebd2814b9530658cdbfdd09
+    - name: Basic Enemy_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 8
+      spriteId: f419f4a88cb32b04cb2e54a57161267d
+    - name: Basic Enemy_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 27
+        y: 8
+        width: 10
+        height: 7
+      spriteId: b959936d3e18166499c81ec304e981d2
+    - name: Basic Enemy_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 21a020cea4bc75b4db793f9592b3636d
+    - name: Basic Enemy_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 54f1fb29b9729654e8a0e9ebb5617b39
+    - name: Basic Enemy_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 29
+        y: 9
+        width: 6
+        height: 10
+      spriteId: 02ecca70a2a86334893c6369594d6b20
+    - name: Basic Enemy_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 29
+        y: 9
+        width: 6
+        height: 10
+      spriteId: ae974efb26740ff488dd0e158dd11e7f
+    - name: Basic Enemy_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 29
+        y: 9
+        width: 6
+        height: 10
+      spriteId: dbf4c0de141e1f3449e35f1bb210688a
+    - name: Basic Enemy_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 29
+        y: 9
+        width: 6
+        height: 10
+      spriteId: da3b216716a7f914795c1497bcb370b1
+    - name: Basic Enemy_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 24684ff532a60154b8a5cf5a41045954
+    - name: Basic Enemy_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 6b5d01fd29ff152439e1f16fb1f8e619
+    - name: Basic Enemy_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 4a55fdea2b469684d8455e7ca08122de
+    - name: Basic Enemy_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 9793efa8345427a41ba5eb20ba0f073f
+    - name: Basic Enemy_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 93f7dd2b916814d4b9f11418422c420b
+    - name: Basic Enemy_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 26d2314cb8669be4a9b6e09574201e8b
+    - name: Basic Enemy_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 348b3a4f6bf85de4887a93eca42dbb54
+    - name: Basic Enemy_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: e21972ac13391ec4c8c0035b04b8dd4d
+    - name: Basic Enemy_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 327fe66ffc1ff524886ad4f6e380f3ab
+    - name: Basic Enemy_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: dfa5e523d1852b643a0f1777ff464604
+    - name: Basic Enemy_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 29
+        y: 9
+        width: 7
+        height: 10
+      spriteId: 6192dabe8fddf144fa5f05d67c4a3344
+    - name: Basic Enemy_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 29
+        y: 10
+        width: 6
+        height: 10
+      spriteId: c9637280600fdb944895b7507da048f0
+    - name: Basic Enemy_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 29
+        y: 10
+        width: 6
+        height: 10
+      spriteId: 6608667cfb0fad64fb13b38cff5601df
+    - name: Basic Enemy_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 29
+        y: 9
+        width: 6
+        height: 10
+      spriteId: a17dad038c7d32040bd24080ce0e66da
+    - name: Basic Enemy_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 29
+        y: 9
+        width: 7
+        height: 10
+      spriteId: 19733bf09e48496408dca9f2cffb61b3
+    - name: Basic Enemy_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 28
+        y: 10
+        width: 8
+        height: 10
+      spriteId: 6853be59bbdf06c4db9f3b7b467ff9c8
+    - name: Basic Enemy_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 28
+        y: 10
+        width: 8
+        height: 10
+      spriteId: 275915c4da152154e8532f11ef969f11
+    - name: Basic Enemy_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 24
+        y: 9
+        width: 12
+        height: 10
+      spriteId: 5cded4f7bb21bfc4c80bcbe18c96e043
+    - name: Basic Enemy_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 24
+        y: 9
+        width: 12
+        height: 10
+      spriteId: f2da9b46b825fa546b2959465a168d4a
+    - name: Basic Enemy_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 24
+        y: 9
+        width: 12
+        height: 10
+      spriteId: bcb9f523c14afb141a6f353b4eb8fe20
+    - name: Basic Enemy_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 28
+        y: 9
+        width: 9
+        height: 9
+      spriteId: 8b8a387bc8e0b5c43b7d0607e4ca9cb1
+    - name: Basic Enemy_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 24
+        y: 9
+        width: 13
+        height: 9
+      spriteId: f42bf50f2ea18cc49b30f98fd9872956
+    - name: Basic Enemy_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 24
+        y: 9
+        width: 13
+        height: 9
+      spriteId: 74610037cb7d94a4fb0730cba8345a5e
+    - name: Basic Enemy_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 24
+        y: 9
+        width: 13
+        height: 9
+      spriteId: 13a328dd846f1b74e8ad74d39e563b8f
+    - name: Basic Enemy_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 27
+        y: 9
+        width: 8
+        height: 10
+      spriteId: a5102d1d76454524db36ec90158be82c
+    - name: Basic Enemy_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 8
+      spriteId: e74117ffcb29a14408dae86e54dc424a
+    - name: Basic Enemy_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 8
+      spriteId: 307d24150a5df984b8e43f361289c913
+    - name: Basic Enemy_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 8
+      spriteId: 169a0a8bddc237d4aa1b4946f4502db4
+    - name: Basic Enemy_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 8
+      spriteId: d717d7826adfe274f99ee9544e78295c
+    - name: Basic Enemy_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 8
+      spriteId: 89a634abc81765140989db8b9763cdee
+    - name: Basic Enemy_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 8
+      spriteId: abdbc126599fc3344b28259e40e5d7de
+    - name: Basic Enemy_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 8
+      spriteId: 0f7113c2e6cc07945bc9bb5892d86702
+    - name: Basic Enemy_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 7e9bc1382c383e64690b4af1fe3b11f1
+    - name: Basic Enemy_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 27
+        y: 9
+        width: 10
+        height: 10
+      spriteId: 105802a566e71be4b9fa3f5cf94f31c7
+    - name: Basic Enemy_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 27
+        y: 9
+        width: 10
+        height: 10
+      spriteId: 5b0e1d6b9d8cc1d4dbc9f67641062fe1
+    - name: Basic Enemy_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 9dec4a77aeaa9674c981445f0959aafe
+    - name: Basic Enemy_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: c60fed75c2cc5ad40aa269d601608067
+    - name: Basic Enemy_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 27
+        y: 9
+        width: 10
+        height: 10
+      spriteId: 6fc4e9e552eb8f14d8cb9ec0ac58ef87
+    - name: Basic Enemy_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 29
+        y: 9
+        width: 6
+        height: 10
+      spriteId: 29886701b1aec31438b972c63410864f
+    - name: Basic Enemy_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 29
+        y: 9
+        width: 6
+        height: 10
+      spriteId: 5329a0acdafad144a8ef66da3847644e
+    - name: Basic Enemy_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 71a23f7f297c8194f94580ef4aaf28a8
+    - name: Basic Enemy_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 29
+        y: 9
+        width: 6
+        height: 10
+      spriteId: 3f9a81b0b807ab34582a357aa8247387
+    - name: Basic Enemy_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 29
+        y: 9
+        width: 6
+        height: 10
+      spriteId: 6ef4c10c4a08f814db502cfd7c708791
+    - name: Basic Enemy_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 27e62ca44305c9b4a9c1c985f67890a5
+    - name: Basic Enemy_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: eb53b186f0219f2408feb2469ff56f10
+    - name: Basic Enemy_Frame_61
+      frameIndex: 61
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 6bd3876c85e2199498ea0fe950e7fdc4
+    - name: Basic Enemy_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 20
+        y: 8
+        width: 15
+        height: 11
+      spriteId: b4b6971c931d45b49ae2da82eb72fbbd
+    - name: Basic Enemy_Frame_63
+      frameIndex: 63
+      cellRect:
+        x: 8
+        y: 4
+        width: 29
+        height: 15
+      spriteId: 073458e9f59affd43bce7ccf6df6ab84
+    - name: Basic Enemy_Frame_64
+      frameIndex: 64
+      cellRect:
+        x: 15
+        y: 4
+        width: 30
+        height: 21
+      spriteId: 5a80cbe9417c669428835064b4b3abae
+    - name: Basic Enemy_Frame_65
+      frameIndex: 65
+      cellRect:
+        x: 27
+        y: 7
+        width: 19
+        height: 17
+      spriteId: a7c7c495a869bbe47b009bbc2a03ffad
+    - name: Basic Enemy_Frame_66
+      frameIndex: 66
+      cellRect:
+        x: 27
+        y: 9
+        width: 18
+        height: 13
+      spriteId: 8059255ebfc13f34c8d587d0000c1354
+    - name: Basic Enemy_Frame_67
+      frameIndex: 67
+      cellRect:
+        x: 27
+        y: 9
+        width: 9
+        height: 10
+      spriteId: bde4b1215816ec841aef7f843e021ca7
+    - name: Basic Enemy_Frame_68
+      frameIndex: 68
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 02cd298efe9b6194fa1f3e47db781448
+    - name: Basic Enemy_Frame_69
+      frameIndex: 69
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 6068b667e42008543a27580a68bd06a3
+    - name: Basic Enemy_Frame_70
+      frameIndex: 70
+      cellRect:
+        x: 27
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 88f8fb89cf149064bbed5761aac6af2a
+    - name: Basic Enemy_Frame_71
+      frameIndex: 71
+      cellRect:
+        x: 28
+        y: 10
+        width: 8
+        height: 8
+      spriteId: 765b2cb020e474a418d2734b1b968a43
+    - name: Basic Enemy_Frame_72
+      frameIndex: 72
+      cellRect:
+        x: 28
+        y: 10
+        width: 8
+        height: 8
+      spriteId: b6f1c89802ca03d4582c7bffb84451a8
+    - name: Basic Enemy_Frame_73
+      frameIndex: 73
+      cellRect:
+        x: 28
+        y: 10
+        width: 8
+        height: 8
+      spriteId: 45ebaf7e605e46c46914924aace79015
+    - name: Basic Enemy_Frame_74
+      frameIndex: 74
+      cellRect:
+        x: 28
+        y: 10
+        width: 8
+        height: 8
+      spriteId: 4db8fe78cdc7fb64dab255e5ab88ead7
+    - name: Basic Enemy_Frame_75
+      frameIndex: 75
+      cellRect:
+        x: 28
+        y: 10
+        width: 8
+        height: 8
+      spriteId: 1c0f88fcc1e3e9d4b9c1421015ff26ad
+    - name: Basic Enemy_Frame_76
+      frameIndex: 76
+      cellRect:
+        x: 28
+        y: 10
+        width: 8
+        height: 8
+      spriteId: 9d3ae32fbf9f24045a5fc96e3a238660
+    - name: Basic Enemy_Frame_77
+      frameIndex: 77
+      cellRect:
+        x: 28
+        y: 10
+        width: 8
+        height: 8
+      spriteId: 474f27dcac7085847bfd93daf619f0e3
+    - name: Basic Enemy_Frame_78
+      frameIndex: 78
+      cellRect:
+        x: 22
+        y: 9
+        width: 14
+        height: 10
+      spriteId: d742e5df6d502ff4096d47ba5c01d7f4
+    - name: Basic Enemy_Frame_79
+      frameIndex: 79
+      cellRect:
+        x: 19
+        y: 9
+        width: 17
+        height: 10
+      spriteId: 219c8845536ab744bb2f03b164670836
+    - name: Basic Enemy_Frame_80
+      frameIndex: 80
+      cellRect:
+        x: 16
+        y: 8
+        width: 32
+        height: 11
+      spriteId: 4a3b185a6d1905048ab0c6b25b568c61
+    - name: Basic Enemy_Frame_81
+      frameIndex: 81
+      cellRect:
+        x: 24
+        y: 9
+        width: 24
+        height: 10
+      spriteId: 1f23215716cdfc94da278c8fd6215bfd
+    - name: Basic Enemy_Frame_82
+      frameIndex: 82
+      cellRect:
+        x: 28
+        y: 9
+        width: 18
+        height: 10
+      spriteId: c8409d519bc972b41ab24e9f191bffd5
+    - name: Basic Enemy_Frame_83
+      frameIndex: 83
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: a336563a064714f4ea1fad25acb8d272
+    - name: Basic Enemy_Frame_84
+      frameIndex: 84
+      cellRect:
+        x: 27
+        y: 9
+        width: 10
+        height: 10
+      spriteId: 8b7d0eccceccdaa458185190c421beb8
+    - name: Basic Enemy_Frame_85
+      frameIndex: 85
+      cellRect:
+        x: 27
+        y: 9
+        width: 12
+        height: 10
+      spriteId: 90c00eec13d044c408d3784552342c65
+    - name: Basic Enemy_Frame_86
+      frameIndex: 86
+      cellRect:
+        x: 27
+        y: 9
+        width: 27
+        height: 10
+      spriteId: 124400c9aa4faa8429cd738412f38ce9
+    - name: Basic Enemy_Frame_87
+      frameIndex: 87
+      cellRect:
+        x: 28
+        y: 9
+        width: 28
+        height: 10
+      spriteId: fb6c53f9a95e4cd4192018ee5f6dba19
+    - name: Basic Enemy_Frame_88
+      frameIndex: 88
+      cellRect:
+        x: 28
+        y: 9
+        width: 30
+        height: 10
+      spriteId: 56498a4b26eca9745abc13c8dcfa254a
+    - name: Basic Enemy_Frame_89
+      frameIndex: 89
+      cellRect:
+        x: 29
+        y: 9
+        width: 7
+        height: 10
+      spriteId: 5bda57fbcd391cd4697a40759001ed96
+    - name: Basic Enemy_Frame_90
+      frameIndex: 90
+      cellRect:
+        x: 28
+        y: 9
+        width: 9
+        height: 11
+      spriteId: 0154f3e09d69cec4eaae702a95e6bf77
+    - name: Basic Enemy_Frame_91
+      frameIndex: 91
+      cellRect:
+        x: 28
+        y: 9
+        width: 10
+        height: 13
+      spriteId: a7497e09f52db9d4b92c1c8997c4be72
+    - name: Basic Enemy_Frame_92
+      frameIndex: 92
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 0bbed170c440c414b82b0288f5c9e6e5
+    - name: Basic Enemy_Frame_93
+      frameIndex: 93
+      cellRect:
+        x: 29
+        y: 9
+        width: 11
+        height: 10
+      spriteId: f01b492ad55556d48867c1999d27b1fa
+    - name: Basic Enemy_Frame_94
+      frameIndex: 94
+      cellRect:
+        x: 29
+        y: 9
+        width: 11
+        height: 10
+      spriteId: 913af06d2ddf3a04e8a7ba8805a58438
+    - name: Basic Enemy_Frame_95
+      frameIndex: 95
+      cellRect:
+        x: 28
+        y: 9
+        width: 13
+        height: 10
+      spriteId: 638c6780857d92349843778e8b64b34c
+    - name: Basic Enemy_Frame_96
+      frameIndex: 96
+      cellRect:
+        x: 28
+        y: 9
+        width: 13
+        height: 10
+      spriteId: 646f12d07a8165946ad2f2a4c43054c6
+    - name: Basic Enemy_Frame_97
+      frameIndex: 97
+      cellRect:
+        x: 28
+        y: 9
+        width: 13
+        height: 10
+      spriteId: b333fbc2ea1c8b04ab5aa191748dcbed
+    - name: Basic Enemy_Frame_98
+      frameIndex: 98
+      cellRect:
+        x: 28
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 76f119e84b5dafe42871ba2f6d05c4f2
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 64, y: 28}

@@ -19,11 +19,20 @@ public class JumpState : IPlayerActiveState
 
     public void EnterState()
     {
+        if(player.CurrentJumpType == Player.JumpType.Regular)
+        {
+            player.AddJumpForce(player.JumpForce);
+        }
+        else if(player.CurrentJumpType == Player.JumpType.Long)
+        {
+            player.AddJumpForceIncludeX(player.LongJumpForce);
+        }
+
         animator.Play("Base Layer.Jump");
 
+        //Initial speed equals the player's Velocity.x, but always positive.
         initialSpeed = player.VelocityX * Mathf.Sign(initialSpeed);
 
-        player.AddJumpForce(player.JumpForce);
         waitBeforeCheckingGroundedStatus += Time.time;
     }
 
@@ -50,6 +59,7 @@ public class JumpState : IPlayerActiveState
 
     public void ExitState()
     {
+        player.CurrentJumpType = Player.JumpType.Regular;
     }
 
     public static string GetName()
@@ -66,10 +76,9 @@ public class JumpState : IPlayerActiveState
         }
         else
         {
-            //When there is no movement input, don't accelerat or decelerate, just stay at the same Velocity
+            //When there is no movement input, don't accelerate or decelerate, just stay at the same Velocity
             airCalc = new VelocityCalculator(player.VelocityX, player.DefaultAirAcceleration);
         }
-
 
         player.VelocityX = airCalc.CalculateNextVelocity(player.VelocityX, player.DeltaTimeCopy);
     }

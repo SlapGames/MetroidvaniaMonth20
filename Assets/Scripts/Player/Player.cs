@@ -10,6 +10,11 @@ public class Player : MonoBehaviour
         Grounded = 0,
         Airborne = 1,
     }
+    public enum JumpType
+    {
+        Regular = 0,
+        Long = 1,
+    }
 
     public PassiveStates PassiveState { get; private set; } = PassiveStates.Grounded;
     public IPlayerActiveState ActiveState { get; private set; }
@@ -46,6 +51,8 @@ public class Player : MonoBehaviour
     public float HoverGravity { get => hoverGravity; private set => hoverGravity = value; }
     public float HoverTime { get => hoverTime; private set => hoverTime = value; }
     public float SpriteDirection { get; private set; } = 1;
+    public JumpType CurrentJumpType { get; set; }
+    public Vector2 LongJumpForce { get => longJumpForce; private set => longJumpForce = value; }
 
     public Rigidbody2D rb2d;
 
@@ -56,6 +63,7 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private Collider2D groundChecker;
     [SerializeField] private Vector2 jumpForce = new Vector2(0, 7);
+    [SerializeField] private Vector2 longJumpForce = new Vector2(5, 5);
     [SerializeField] private Vector2 backflipForce = new Vector2(0, 9);
     [SerializeField] private float defaultSpeed = 3.5f;
     [SerializeField] private float defaultGroundedAcceleration = -1;
@@ -252,7 +260,10 @@ public class Player : MonoBehaviour
     public void AddJumpForce(Vector2 force)
     {
         rb2d.velocity = new Vector2(rb2d.velocity.x, force.y);
-        //rb2d.AddForce(force, ForceMode2D.Impulse);
+    }
+    public void AddJumpForceIncludeX(Vector2 force)
+    {
+        rb2d.velocity = new Vector2(rb2d.velocity.x + force.x, force.y);
     }
 
     public void TriggerDodgeCooldown()
