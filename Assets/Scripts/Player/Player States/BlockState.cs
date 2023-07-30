@@ -33,6 +33,10 @@ public class BlockState: IPlayerActiveState
         {
             player.ChangeActiveState(nameof(NoActionState));
         }
+        else if (playerInputManager.ReadCurrentInput()?.InputType == InputType.Attack)
+        {
+            player.ChangeActiveState(nameof(PsychicPowerState));
+        }
     }
 
     public void ExitState()

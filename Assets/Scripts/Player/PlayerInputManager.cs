@@ -243,4 +243,14 @@ public class PlayerInputManager : MonoBehaviour
             GetComponent<Player>().TryToActivateSwitches();
         }
     }
+
+    public void HandlePowerDeactivate(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            GetComponent<Player>().DeactivatePowers();
+        }
+    }
+
+
 }

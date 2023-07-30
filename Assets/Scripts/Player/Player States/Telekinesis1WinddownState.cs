@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class PsychicPowerState: IPlayerActiveState
+public class Telekinesis1WinddownState: IPlayerActiveState
 {
     private Player player;
     private PlayerInputManager playerInputManager;
@@ -8,7 +8,7 @@ public class PsychicPowerState: IPlayerActiveState
 
     private CombatManager combatManager;
 
-    public PsychicPowerState(Player player, PlayerInputManager playerInputManager, Animator animator)
+    public Telekinesis1WinddownState(Player player, PlayerInputManager playerInputManager, Animator animator)
     {
         this.player = player;
         this.playerInputManager = playerInputManager;
@@ -19,17 +19,14 @@ public class PsychicPowerState: IPlayerActiveState
     
     public void EnterState()
     {
+        animator.Play($"Base Layer.Tele 1 Winddown");
     }
 
     public void EvaluateTransitions()
     {
-        if (player.ActivePsychicPower == "")
+        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
         {
             player.ChangeActiveState(nameof(NoActionState));
-        }
-        else if (player.ActivePsychicPower == "Telekinesis 1")
-        {
-            player.ChangeActiveState(nameof(Telekinesis1WindupState));
         }
     }
 

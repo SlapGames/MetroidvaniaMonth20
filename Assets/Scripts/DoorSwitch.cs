@@ -12,6 +12,13 @@ public class DoorSwitch:MonoBehaviour
 
     private SpriteRenderer renderer;
 
+    private void Start()
+    {
+        renderer = GetComponent<SpriteRenderer>();
+
+        renderer.sprite = On ? onSprite : offSprite;
+    }
+
     public void Switch()
     {
         if(dontAllowManualTurningOff && On)

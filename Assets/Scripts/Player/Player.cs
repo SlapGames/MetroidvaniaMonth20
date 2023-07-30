@@ -55,6 +55,10 @@ public class Player : MonoBehaviour
     public Vector2 LongJumpForce { get => longJumpForce; private set => longJumpForce = value; }
     public Vector2 LastSafePosition { get => lastSafePosition; set => lastSafePosition = value; }
     public float MaxVerticalSpeed { get => maxVerticalSpeed; private set => maxVerticalSpeed = value; }
+    public List<string> PotentialPsychicPowers { get => potentialPsychicPowers; set => potentialPsychicPowers = value; }
+    public string ActivePsychicPower { get => activePsychicPower; set => activePsychicPower = value; }
+    public Telekinesis1Manager Telekinesis1Manager { get => telekinesis1Manager; private set => telekinesis1Manager = value; }
+    public List<int> EnergyPenalties { get => energyPenalties; private set => energyPenalties = value; }
 
     public Rigidbody2D rb2d;
 
@@ -84,9 +88,13 @@ public class Player : MonoBehaviour
     [SerializeField] private float maxVerticalSpeed = 10f;
     [SerializeField] private bool useTargetYVelocity = false;
 
+    [Space(15)]
+    [Header("Energy")]
     [SerializeField] private int energy = 2;
+    [SerializeField] private List<int> energyPenalties = new List<int>();
     [SerializeField] private Color[] energyColors = { Color.red, Color.yellow, Color.green };
 
+    [Space(15)]
     [SerializeField] private ParticleSystem doubleJumpAfterImageSystem;
     [SerializeField] private ParticleSystem airDodgeAfterImageSystem;
     [SerializeField] private ParticleSystem grappleAfterImageSystem;
@@ -110,6 +118,12 @@ public class Player : MonoBehaviour
     private Material playerMaterial;
 
     private PlayerInputManager inputManager;
+
+    [Space(15)]
+    [Header("Psychic Powers")]
+    [SerializeField] private List<string> potentialPsychicPowers = new List<string>();
+    [SerializeField] private string activePsychicPower;
+    [SerializeField] private Telekinesis1Manager telekinesis1Manager;
 
     [Space(15)]
     [Header("Debug")]
@@ -138,6 +152,7 @@ public class Player : MonoBehaviour
 
         GManager = GetComponent<GrappleManager>();
         CManager = GetComponent<CombatManager>();
+        Telekinesis1Manager = GetComponent<Telekinesis1Manager>();
 
         playerMaterial = GetComponent<SpriteRenderer>().material;
         playerMaterial.SetColor("_Color", energyColors[energy]);
@@ -364,6 +379,16 @@ public class Player : MonoBehaviour
     public void ResetEnergyLevel()
     {
         energy = energyColors.Length - 1;
+
+        foreach(int penalty in EnergyPenalties)
+        {
+            energy -= penalty;
+        }
+
+        if(energy < 0)
+        {
+            energy = 0;
+        }
     }
 
     public void UseEnergy()
@@ -440,8 +465,24 @@ public class Player : MonoBehaviour
             DoorSwitch doorSwitch = results[i].GetComponent<DoorSwitch>();
             if (doorSwitch != null)
             {
-                doorSwitch.Toggle();
+                doorSwitch.Switch();
             }
+
+            Telekinesis1Giver telekinesis1Giver = results[i].GetComponent<Telekinesis1Giver>();
+            if(telekinesis1Giver != null)
+            {
+                potentialPsychicPowers.Add("Telekinesis 1");
+                activePsychicPower = "Telekinesis 1";
+                Destroy(telekinesis1Giver.gameObject);
+            }
+        }
+    }
+
+    public void DeactivatePowers()
+    {
+        if(activePsychicPower == "Telekinesis 1")
+        {
+            telekinesis1Manager.HandleDeactivate();
         }
     }
 }

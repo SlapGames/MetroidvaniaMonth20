@@ -7,6 +7,7 @@ TagManager:
   - Grapple Point
   - Interactor
   - Switch
+  - Player Attack
   layers:
   - Default
   - TransparentFX
@@ -19,8 +20,8 @@ TagManager:
   - Player
   - Interactor
   - Switch
-  - 
-  - 
+  - Grapple Detector
+  - Wall Detector
   - 
   - 
   - 

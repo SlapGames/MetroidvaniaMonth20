@@ -71,6 +71,12 @@ public class PlayerActiveStateFactory
                 return new BlockStunState(playerToProvide, playerInputManagerToProvide, animatorToProvide);
             case nameof(HitStunState): 
                 return new HitStunState(playerToProvide, playerInputManagerToProvide, animatorToProvide);
+            case nameof(Telekinesis1WindupState): 
+                return new Telekinesis1WindupState(playerToProvide, playerInputManagerToProvide, animatorToProvide);
+            case nameof(Telekinesis1ActionState): 
+                return new Telekinesis1ActionState(playerToProvide, playerInputManagerToProvide, animatorToProvide);
+            case nameof(Telekinesis1WinddownState): 
+                return new Telekinesis1WinddownState(playerToProvide, playerInputManagerToProvide, animatorToProvide);
 
             default: return null;
         }
