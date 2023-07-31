@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8797437568777342033}
   - component: {fileID: 2672365463826932664}
   - component: {fileID: 529501553140399764}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2672365463826932664
 SpriteRenderer:

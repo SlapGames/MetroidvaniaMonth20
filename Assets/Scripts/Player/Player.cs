@@ -469,6 +469,7 @@ public class Player : MonoBehaviour
             }
 
             Telekinesis1Giver telekinesis1Giver = results[i].GetComponent<Telekinesis1Giver>();
+            Debug.Log(telekinesis1Giver);
             if(telekinesis1Giver != null)
             {
                 potentialPsychicPowers.Add("Telekinesis 1");
